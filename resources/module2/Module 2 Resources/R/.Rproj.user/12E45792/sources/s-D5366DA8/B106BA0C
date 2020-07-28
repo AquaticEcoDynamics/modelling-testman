@@ -1,0 +1,24 @@
+{
+    "id": "B106BA0C",
+    "path": "~/Documents/GitHub/modelling-manual/resources/module2/Module 2 Resources/R/Plotting.R",
+    "project_path": "Plotting.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": true,
+    "created": 1595908173786.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "cursorPosition": "7,25",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1406093380,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1595909741589,
+    "read_only": false,
+    "read_only_alternatives": []
+}

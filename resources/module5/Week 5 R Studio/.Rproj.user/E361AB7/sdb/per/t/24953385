@@ -1,0 +1,17 @@
+{
+    "contents" : "#plot(time,P)\n\nplot(time,Stot)\nplot(time,Ssat)\nplot(time,Sus)\nplot(time,Susprime)\nplot(time,Stotprime)\nplot(time,etot)\nplot(time,Qtot)\n\n",
+    "created" : 1409637234809.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3786410324",
+    "id" : "24953385",
+    "lastKnownWriteTime" : 1409741949,
+    "path" : "C:/Users/20731446/Desktop/Documents/Uni/Tutoring/2014/Hydrology/Plotting.R",
+    "project_path" : "Plotting.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

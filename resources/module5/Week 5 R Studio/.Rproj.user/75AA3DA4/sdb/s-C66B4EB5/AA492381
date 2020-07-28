@@ -1,0 +1,16 @@
+{
+    "contents" : "You should know now how to make a png file, and save it where you need to.\nIf you do not, then have a look at Week2 and Week 4, or google it.\nIf you want to put more than one variable on the same axis, use the functions 'points' or 'lines'\nplot(time,P)\nplot(time,Stot)\nplot(time,Ssat)\nplot(time,Sus)\nplot(time,Susprime)\nplot(time,Stotprime)\nplot(time,etot)\nplot(time,Qtot)\n\n",
+    "created" : 1472545251894.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2240665562",
+    "id" : "AA492381",
+    "lastKnownWriteTime" : 1472546388,
+    "path" : "D:/Tutoring/2016/Week 5/Plotting.R",
+    "project_path" : "Plotting.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(\"scales\", lib.loc=\"~/R/win-library/2.15\")\n#NULL\nStot     =NULL\nSsat     =NULL\nep       =NULL\nSusfc    =NULL\nStotprime=NULL\nSusprime =NULL\nRp       =NULL\nev       =NULL\nebs      =NULL\neag      =NULL\netot     =NULL\nQse      =NULL\nQie      =NULL\nQss      =NULL\nQtot     =NULL\nSsat     =NULL\nWT       =NULL\nSus      =NULL\nStot     =NULL\n#CATCHMENT\nD=10 # Catchment average depth (m)\nAc=100# Catchment area (m2)\n#SOIL\nphi     =0.35 #\tSoil porosity (-)\nDebs    =9\t  #Depth limit of soil evap (m)\nDeag    =8\t  #Depth limit of ag crop ET (m)\nKs      =0.01\t#Hyd conductivity (-)\nalphas  =0.04\t#Scaling for baseflow (-)\nbetas   =2\t  #Scaling for baseflow (-)\nthetapwp=0.01\t#Permanent wilting point (-)\nthetafc =0.1\t#Field capacity (-)\nImax    =0.04\t#Max infiltration capacity (m/day)\n#VEGETATION\nM= 0.5\t#% deep-rooted (-)\nC= 0.3\t#% agricultural crop (-)\n#STORAGE --------------------- INITIAL CONDITION ----------------------------\nStot[1]=324\nSsat[1]=0.90*Stot[1]\nSus[1] =Stot[1]-Ssat[1]\n#TIME\ntime<-seq(as.Date(\"2007/1/1\"),as.Date(\"2011/12/31\"),by=\"day\")\ntime[1:50]\nTime<-as.POSIXlt(time)\nTime[1:50]\ndays<-Time$mday\ndays[1:50]\nmonths<-Time$mon+1\nmonths[1:50]\nHave a \n\"Have a look at how I made the time sequence and try to understand it.\"\nDelete this\n\"Delete this line once you have understood it.\"\n#CLIMATE\nalphaebs=0.5\t#bare soil evap scaling (-)\nalphaeag=0.5\t#crop evap scaling (-)\nkv      =0.95\t#forest evap scaling (-)\nepannual=1.5\t#Potl evaporation (m)\nepsilon =2\t#Evap sensitivity to storage: ε\nfc=(thetafc-thetapwp)/(phi-thetapwp) # Threshold storage (-)\nSmax=D*(phi-thetapwp)*Ac # Maximum storage capacity (m3)\n#CLIMATE FORCING \n#Add rainfall boundary condition here as text file and location\n#for example H:/Documents/Precipitation.txt\nprecip<-read.table(file=\" put the location of the text file here /with forward slashes/Precipitation.txt\")\nepamp  =0.9\n#angfreq=8*atanh_trans(1)/365.25\nangfreq=0.017202424\nepphase=91\n",
+    "created" : 1440725801649.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2083202049",
+    "id" : "2053CEB3",
+    "lastKnownWriteTime" : 1503810814,
+    "last_content_update" : 1503810814402,
+    "path" : "D:/Tutoring/2017/ENVT3362/Week 5/Week 5 R Studio/Week 5 R Studio/Inputs.R",
+    "project_path" : "Inputs.R",
+    "properties" : {
+    },
+    "relative_order" : 0,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

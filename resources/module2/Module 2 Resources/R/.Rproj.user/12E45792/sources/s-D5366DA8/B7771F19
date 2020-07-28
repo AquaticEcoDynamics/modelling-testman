@@ -1,0 +1,24 @@
+{
+    "id": "B7771F19",
+    "path": "~/Documents/GitHub/modelling-manual/resources/module2/Module 2 Resources/R/Equations.R",
+    "project_path": "Equations.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1595908170637.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "cursorPosition": "13,2",
+        "scrollLine": "2"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1406090591,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1406090591,
+    "read_only": false,
+    "read_only_alternatives": []
+}
