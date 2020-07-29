@@ -6,7 +6,7 @@
 
 Become familiar with basic spreadsheet commands in Excel by conducting an environmental flow analysis and building a simple impact model.
 
-### What is an environmental flow? {-}
+### What are environmental flows? {-}
 
 Lakes, rivers and estuaries are adapted to receive water based on the natural hydrological condition, but often water is required upstream for other purposes. An environmental flow is water that is provided to the environment to maintain its health and natural diversity
 
