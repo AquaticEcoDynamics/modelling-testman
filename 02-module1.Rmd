@@ -41,7 +41,11 @@ You are given a time-series of daily river flow and need to assess how different
 0-40; 40-80; 80-120; 120-200; 200-400; 400-1000; >1000
 
 ```{block2, hint1, type='rmdtip2'}
-Use a nested `IF()` statement in adjacent columns to partition flows
+Use a nested `IF()` statement in adjacent columns to partition flows:
+<center>
+![](images/02-module1/picture2.png){width=100%}
+</center>
+
 ```
 
 <center>

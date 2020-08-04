@@ -112,7 +112,12 @@ If we assume that calcium ion concentration does not vary much in this system, w
 
 
 Have a good think about this: given these CO~2~ and pH, did your calculations lead to a system that favours CaCO~3~ dissolution or precipitation? 
+<center>
 
+<!-- ![](https://media.giphy.com/media/DHqth0hVQoIzS/giphy.gif){ width=75% } -->
+
+
+</center>
 
 ### Exercise 2 {#M4_5 -}
 
