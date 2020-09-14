@@ -101,16 +101,16 @@ The concentration of hydroxide can be found by rearranging Equation \@ref(eq:mod
 <br>
 
 Open the Excel spreadsheet or R project and examine the tab or script `Initial CO2`. The chemical equations and constants are given to you already. The variables that we are forcing to be constant in Excel are
-<span style="color: #A5A5A5;">coloured grey</span>. Enter the equations for Exercise 1 into the <span style="color: #FAEC29;">yellow boxes</span>.
+<span style="color: #A5A5A5;">coloured grey</span>. Enter the equations for Exercise 1 into the <span style="color: #FFD966;">yellow boxes</span>.
 
-If we assume that calcium ion concentration does not vary much in this system, we can force it to be 5×10^-4^ mol L^-1^. Calcium carbonate (CaCO~3~) precipitation or dissolution is governed by the ratio (\mathrm{\Omega}) of Ca^2+^ concentration and CO~3~^2-^ concentration to the solubility constant, $K_{sp}$, according to Equations \@ref(eq:module4-10) and \@ref(eq:module4-11). If \mathrm{\Omega} is greater than 1, then precipitation is favourable, and conversely, if \mathrm{\Omega} is less than 1, dissolution is favourable. 
+If we assume that calcium ion concentration does not vary much in this system, we can force it to be 5×10^-4^ mol L^-1^. Calcium carbonate (CaCO~3~) precipitation or dissolution is governed by the ratio ($\mathrm{\Omega}$) of Ca^2+^ concentration and CO~3~^2-^ concentration to the solubility constant, $K_{sp}$, according to Equations \@ref(eq:module4-10) and \@ref(eq:module4-11). If \mathrm{\Omega} is greater than 1, then precipitation is favourable, and conversely, if \mathrm{\Omega} is less than 1, dissolution is favourable. 
 
 <center>
 <br>
 \begin{align*}
 {CO}_3^{2-} &+{Ca}^{2+}\rightleftarrows CaCO_3 \hspace{3em}	K_{sp} = 1\times 10^{-8.4}
 (\#eq:module4-10) \\
-\mathrm{\Omega} &=\frac{[Ca2+][CO32-]}{[K_{sp\space CaCO_{3}}]}
+\mathrm{\Omega} &=\frac{[Ca^{2+}][CO_{3}^{2-}]}{[K_{sp\space CaCO_{3}}]}
 (\#eq:module4-11) \\
 \end{align*}
 </center>
@@ -122,10 +122,6 @@ Have a good think about this: given these CO~2~ and pH, did your calculations le
 ### Exercise 2 {#M4_5 -}
 
 In this exercise you will construct a double-logarithmic plot of this system, holding CO2 constant and varying the pH. Go to the second tab in Excel and copy the equations over from the first tab. Or in R, you can run a *for loop* to calculate the different concentrations for each of the different pHs. Then you will have some of the major variables converted to logarithms. Next you can make an x y scatter plot. If you add the data correctly, you should get a plot that looks like Figure \@ref(fig:module4pic2).
-
-```{block, question1, type='rmdquestion'}
-How similar is this plot to yours? At what pH do the OH^-^ and H^+^ lines cross? Make sure to format it nicely and add pK~1~ etc. 
-```
 
 <center>
 ```{r module4pic2, echo=FALSE, fig.cap="Double logarithmic plot of the equilibrium composition of seawater in our model [@stumm1996]", out.width = '90%'}
@@ -152,12 +148,14 @@ This is the cool part. Here we are going to calculate a new pH given an increase
 
 
 
-Solving this quadratic would be fiendishly difficult. Instead, we will use trial and error, otherwise known as our iterative solution. We will do this to find a value for H+ that is the same on both sides of the equation.
+Solving this quadratic would be fiendishly difficult. Instead, we will use trial and error, otherwise known as our iterative solution. We will do this to find a value for H^+^ that is the same on both sides of the equation.
 
 Go to the third tab and copy over all of the equations from Exercise 1. The <span style="color: #A5A5A5;">grey boxes</span> are the values that we will hold constant, and the first guess for H^+^, based on the H^+^ in Exercise 1. You can alter the CO~2~ concentration using the CO~2~ multiplier cell and your rapidly developing Excel and R skills. If you want to double CO~2~ concentration, type 2 into the multiplier cell. If you want to keep it at present levels, type 1. Repeat the calculation of Equation \@ref(eq:module4-13) over successive iterations, using the answer from the previous iteration as your guess for the next iteration. Eventually, the difference between your guesses will become very small and you can settle on a constant pH. (This is roughly how equilibrium-solving computer programs solve complex biogeochemical interactions, often with many more interacting variables than this.)
 Don’t forget that your successive iterations, are not time steps, like we had in previous weeks. Rather, they are just guesses at the right number that only exist in the model. Your final answer is the only one that has a real scientific meaning. If you want to determine the pH over a range of CO~2~ concentrations, you will need to repeat the calculation over ~10 rows, and save your results each time.
 
+```{block, question4, type='rmdquestion'}
 Big questions: if you increase CO~2~, does the pH rise or fall? Does CaCO~3~ precipitation become more or less favourable if CO~2~ increases?
+```
 
 ### Exercise 4 {#M4_7 -}
 
@@ -173,7 +171,7 @@ knitr::include_graphics("images/05-module4/picture3.png")
 
 Go to the [Plot Digitizer website](https://sourceforge.net/projects/plotdigitizer/files/) and download the program.
 
-Open the IPCC image in Plot Digitizer. The program guides you through the steps you need to take: read the command at the bottom of the screen (for example, “Choose most negative end of x-axis”) and click “Done” when you have finished. It will be easiest if you make a point every 10 years. Save each dataset as a separate csv file and then combine the results in one sheet. If your x axis points line up nicely enough, you can re-plot the data.
+Open the IPCC image in Plot Digitizer. The program guides you through the steps you need to take: read the command at the bottom of the screen (for example, “Choose most negative end of x-axis”) and click “Done” when you have finished. It will be easiest if you make a point every 10 years. Save each dataset as a separate csv file and then combine the results in one sheet. If your x-axis points line up nicely enough, you can re-plot the data.
 
 <center>
 <video width="70%" height="70%" controls>
