@@ -44,7 +44,12 @@ GLM will not run on any versions of R newer than 4.0
 
 ### Configuring Model Parameters {#M8_7 -}
 
-To configure the model, open the *glm3.nml* file in the *Kinneret97* directory with a plain text editor (TextEdit on MacOS, or Notepad on Windows). A chunk of this *.nml* file is shown below. For example, if you wanted to change the maximum number of lake layers the model simulates, you would change `max_layers = 500`.
+To configure the model, open the *glm3.nml* file in the *Kinneret97* directory with a text editor. A chunk of this *.nml* file is shown below. For example, if you wanted to change the maximum number of lake layers the model simulates, you would change `max_layers = 500`.
+
+```{block2, hint09_3, type='rmdnote2'}
+The easiest way to edit the *glm3.nml* file is with the Atom text editor. You can download it [here](https://atom.io).
+```
+
 
 ```{style="max-height: 400px;"}
 !------------------------------------------------------------------------------!
