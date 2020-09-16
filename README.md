@@ -1,2 +1,2 @@
-# modelling-manual
-Interactive manual for learning how to model environmental dynamics
+# modelling-testman
+demo version of modelling-manual
